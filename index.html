@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Product</title>
+    <meta
+      id="page-description"
+      name="description"
+      content="一个用于记录已开发 AI 产品的静态作品集页面。"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="topbar">
+        <div class="topbar-brand">
+          <span class="brand-dot"></span>
+          <span>AI Product</span>
+        </div>
+        <div class="topbar-actions">
+          <button
+            id="language-toggle"
+            class="toolbar-button"
+            type="button"
+            aria-label="切换语言"
+          >
+            中文 / EN
+          </button>
+          <button
+            id="theme-toggle"
+            class="toolbar-button"
+            type="button"
+            aria-label="切换主题"
+          >
+            Dark Mode
+          </button>
+        </div>
+      </div>
+
+      <header class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Selected Works</p>
+          <h1 data-i18n="heroTitle">AI Product</h1>
+          <p class="hero-text" data-i18n="heroText">
+            用一个克制、清晰的静态页面，记录做过的产品、原型和实验。现在先用 mock 数据组织内容，后续可以平滑切换成真实项目数据。
+          </p>
+        </div>
+      </header>
+
+      <section class="progress-section">
+        <div class="progress-copy">
+          <p class="panel-label" data-i18n="archiveProgress">Archive Progress</p>
+          <strong id="coverage-ratio" class="progress-ratio">0 / 20</strong>
+        </div>
+        <div class="progress-metric">
+          <strong id="coverage-label">0%</strong>
+          <div
+            class="progress-track"
+            role="progressbar"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            aria-valuenow="0"
+            aria-labelledby="coverage-label"
+          >
+            <span id="coverage-bar" class="progress-bar"></span>
+          </div>
+        </div>
+      </section>
+
+      <main>
+        <section class="section-head">
+          <div>
+            <p class="section-label" data-i18n="portfolioIndex">Portfolio Index</p>
+            <h2 data-i18n="archiveTitle">项目归档</h2>
+          </div>
+          <div class="section-side">
+            <p class="section-meta" id="page-indicator">
+              第 <span id="current-page">1</span> / <span id="total-pages">1</span> 页
+            </p>
+            <p class="section-meta" id="visible-indicator">
+              当前展示 <span id="visible-count">0</span> 个项目
+            </p>
+          </div>
+        </section>
+
+        <section
+          id="project-grid"
+          class="project-grid"
+          aria-label="Vibe coding 项目列表"
+          data-i18n-aria-label="projectListAria"
+        ></section>
+
+        <nav class="pagination" aria-label="项目分页" data-i18n-aria-label="paginationAria">
+          <button id="prev-button" class="pagination-button" type="button">
+            Prev
+          </button>
+          <div id="pagination-numbers" class="pagination-numbers"></div>
+          <button id="next-button" class="pagination-button" type="button">
+            Next
+          </button>
+        </nav>
+      </main>
+    </div>
+
+    <template id="project-card-template">
+      <a class="project-card" target="_blank" rel="noreferrer">
+        <div class="card-top">
+          <p class="project-year"></p>
+          <span class="project-status"></span>
+        </div>
+        <div class="card-body">
+          <h3 class="project-title"></h3>
+          <p class="project-description"></p>
+        </div>
+        <div class="card-footer">
+          <div class="project-tags"></div>
+          <span class="project-link" data-i18n="openProject">Open project</span>
+        </div>
+      </a>
+    </template>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
