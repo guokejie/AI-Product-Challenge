@@ -140,6 +140,12 @@ body::before {
   padding: 18px 4px 12px;
 }
 
+.hero-title-row {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
 .eyebrow,
 .section-label,
 .project-year,
@@ -167,6 +173,21 @@ body::before {
   font-weight: 700;
   line-height: 0.92;
   letter-spacing: -0.055em;
+}
+
+.hero-poop {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 60px;
+  height: 60px;
+  margin-top: 6px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface-soft);
+  box-shadow: var(--shadow);
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  line-height: 1;
 }
 
 .hero-text {

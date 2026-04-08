@@ -1,11 +1,11 @@
 const translations = {
   zh: {
     lang: "zh-CN",
-    pageTitle: "AI Product",
+    pageTitle: "AI Rubbish",
     pageDescription: "一个用于记录已开发 AI 产品的静态作品集页面。",
     heroEyebrow: "精选作品",
-    heroTitle: "AI Product",
-    heroText: "挑战一年 vibe coding 20 个 AI 产品。",
+    heroTitle: "AI Rubbish",
+    heroText: "挑战一年 vibe coding 20 个 AI 💩。",
     archiveProgress: "归档进度",
     portfolioIndex: "作品索引",
     archiveTitle: "项目归档",
@@ -31,58 +31,18 @@ const translations = {
     },
     projects: [
       {
-        title: "Raccoon Vocab",
-        description: "面向语言学习的词汇产品，聚焦记忆节奏、练习反馈和轻量复习体验。",
-        tags: ["iOS", "SwiftUI", "学习"],
-      },
-      {
-        title: "Twitter Frontend",
-        description: "社交内容流原型，尝试信息密度、互动节奏和轻量创作的页面组织方式。",
-        tags: ["Web", "前端", "Feed"],
-      },
-      {
-        title: "Raccoon API",
-        description: "为词汇产品提供服务端能力的接口项目，承载内容、同步与业务编排逻辑。",
-        tags: ["后端", "API", "Node"],
-      },
-      {
-        title: "Focus Timer",
-        description: "一个用于番茄专注和任务回顾的实验产品，强调快速进入和数据轻记录。",
-        tags: ["效率", "计时器", "模拟"],
-      },
-      {
-        title: "Prompt Lab",
-        description: "用于保存、测试和对比提示词效果的轻量工具，适合作为 AI 工作流组件。",
-        tags: ["AI", "提示词", "实验"],
-      },
-      {
-        title: "Landing Forge",
-        description: "一个帮助快速生成产品落地页结构和视觉风格的静态页面生成器概念。",
-        tags: ["落地页", "生成器", "模拟"],
-      },
-      {
-        title: "Habit Canvas",
-        description: "围绕习惯追踪与每周回顾的概念型产品，强调轻量记录和连续反馈。",
-        tags: ["习惯", "仪表盘", "模拟"],
-      },
-      {
-        title: "Voice Notes AI",
-        description: "将语音记录整理为结构化要点的效率工具，用于个人研究和项目梳理。",
-        tags: ["AI", "语音", "笔记"],
-      },
-      {
-        title: "Studio Frame",
-        description: "用于快速搭建产品展示页与案例页的实验模板库，强调简洁的视觉和清晰叙述。",
-        tags: ["作品集", "模板", "Web"],
+        title: "像素豆屋",
+        description: "一个拼豆创作工具，支持上传图片、裁剪主体、生成拼豆图，并可按像素编辑色号后导出 PNG。",
+        tags: ["Web", "工具", "拼豆"],
       },
     ],
   },
   en: {
     lang: "en",
-    pageTitle: "AI Product",
+    pageTitle: "AI Rubbish",
     pageDescription: "A static portfolio page for documenting AI products already built.",
     heroEyebrow: "Selected Works",
-    heroTitle: "AI Product",
+    heroTitle: "AI Rubbish",
     heroText: "Challenge: build 20 AI products in one year with vibe coding.",
     archiveProgress: "Archive Progress",
     portfolioIndex: "Portfolio Index",
@@ -109,58 +69,10 @@ const translations = {
     },
     projects: [
       {
-        title: "Raccoon Vocab",
+        title: "Pixel Bean Hut",
         description:
-          "A vocabulary product for language learners focused on memory rhythm, practice feedback, and lightweight review.",
-        tags: ["iOS", "SwiftUI", "Learning"],
-      },
-      {
-        title: "Twitter Frontend",
-        description:
-          "A social feed prototype exploring information density, interaction rhythm, and lightweight creation flows.",
-        tags: ["Web", "Frontend", "Feed"],
-      },
-      {
-        title: "Raccoon API",
-        description:
-          "A backend interface project powering the vocabulary product with content, sync, and orchestration capabilities.",
-        tags: ["Backend", "API", "Node"],
-      },
-      {
-        title: "Focus Timer",
-        description:
-          "An experimental productivity product for pomodoro focus sessions and lightweight task reviews.",
-        tags: ["Productivity", "Timer", "Mock"],
-      },
-      {
-        title: "Prompt Lab",
-        description:
-          "A lightweight tool for saving, testing, and comparing prompts as part of an AI workflow.",
-        tags: ["AI", "Prompt", "Experiment"],
-      },
-      {
-        title: "Landing Forge",
-        description:
-          "A concept for rapidly generating landing-page structures and visual directions for new products.",
-        tags: ["Landing Page", "Generator", "Mock"],
-      },
-      {
-        title: "Habit Canvas",
-        description:
-          "A concept product for habit tracking and weekly reflection with lightweight logging and continuity feedback.",
-        tags: ["Habit", "Dashboard", "Mock"],
-      },
-      {
-        title: "Voice Notes AI",
-        description:
-          "A productivity tool that turns voice captures into structured notes for research and project planning.",
-        tags: ["AI", "Voice", "Notes"],
-      },
-      {
-        title: "Studio Frame",
-        description:
-          "An experimental template library for quickly building product showcases and case-study pages with clear storytelling.",
-        tags: ["Portfolio", "Template", "Web"],
+          "A perler-bead creation tool that lets users upload images, crop the subject, generate bead art, edit pixel colors, and export PNG files.",
+        tags: ["Web", "Tool", "Pixel Art"],
       },
     ],
   },
@@ -170,47 +82,7 @@ const projects = [
   {
     year: "2026",
     status: "Shipped",
-    url: "../Raccoon%20Vocab/",
-  },
-  {
-    year: "2026",
-    status: "Prototype",
-    url: "../twitter/frontend/",
-  },
-  {
-    year: "2026",
-    status: "Internal",
-    url: "../raccoon-vocab-server/",
-  },
-  {
-    year: "2025",
-    status: "Mock",
-    url: "https://example.com/focus-timer",
-  },
-  {
-    year: "2025",
-    status: "Mock",
-    url: "https://example.com/prompt-lab",
-  },
-  {
-    year: "2025",
-    status: "Mock",
-    url: "https://example.com/landing-forge",
-  },
-  {
-    year: "2025",
-    status: "Prototype",
-    url: "https://example.com/habit-canvas",
-  },
-  {
-    year: "2025",
-    status: "Internal",
-    url: "https://example.com/voice-notes-ai",
-  },
-  {
-    year: "2024",
-    status: "Shipped",
-    url: "https://example.com/studio-frame",
+    url: "https://pixel-bean-hut.vercel.app/",
   },
 ];
 

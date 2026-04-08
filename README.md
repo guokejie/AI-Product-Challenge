@@ -6,7 +6,7 @@
 
 - `index.html`: 页面结构
 - `styles.css`: 页面样式
-- `app.js`: mock 数据与卡片渲染逻辑
+- `app.js`: 项目数据与卡片渲染逻辑
 
 ## 使用
 
